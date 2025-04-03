@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+  font-size: clamp(10px, 1.1vw, 50px);
+  padding: 6.5px 30px;
+  border-radius: 9999px;
+}
+
+h2,
+a,
+ul li {
+  font-size: clamp(10px, 1.2vw, 50px);
+}
+h3,
+ul li strong {
+  font-size: clamp(10px, 1.3vw, 50px);
+}
+ul li strong {
+  font-weight: 600;
+}
+h4 {
+  font-size: clamp(10px, 1.7vw, 50px);
+}
+h5 {
+  font-size: clamp(10px, 3.1vw, 50px);
+  line-height: 1.3;
+}
+h6 {
+  font-size: clamp(10px, 1.1vw, 50px);
+}
+.list-image-tick {
+  list-style-image: url("./assets/icons/tick.png");
+}
