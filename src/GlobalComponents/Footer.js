@@ -38,7 +38,12 @@ function Footer() {
     <div className="pb-[2%] w-[83%] mx-auto ">
       <div className="w-full py-[2%] flex justify-center items-center border-b border-[#F12D0B] border-opacity-70">
         <div className="w-fit max-w-[18vw]">
-          <img src={logo} alt="" className="w-[250px] mb-[2%]" />
+          <img
+            onClick={() => (window.location.href = "/")}
+            src={logo}
+            alt=""
+            className="w-[250px] mb-[2%] cursor-pointer"
+          />
           <h2 className="text-[#121212] font-extralight leading-snug">
             Our Solutions make production faster and cheaper. Contact us for
             more information
