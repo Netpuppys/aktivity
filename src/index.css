@@ -10,7 +10,8 @@ button {
 
 h2,
 a,
-ul li {
+ul li,
+h1 {
   font-size: clamp(10px, 1.2vw, 50px);
 }
 h3,

@@ -18,9 +18,9 @@ function Banner() {
         </h5>
       </Bounce>
       <Fade triggerOnce delay={300}>
-        <h3 className="text-center pt-[1%] text-[#707070]">
+        <h1 className="text-center pt-[1%] text-[#707070]">
           Transform passive learning into interactive, high-impact
-        </h3>
+        </h1>
       </Fade>
       <div className="w-fit flex gap-6 pt-[2%] pb-[1%]">
         <button className="bg-gradient-to-r from-[#F6AB12] via-[#F12D0B] to-[#800437] text-white shadow-[0px_4px_10.1px_rgba(0,0,0,0.25)] hover:bg-white hover:text-transparent hover:bg-clip-text transition-all duration-300 ease-in-out font-medium">
@@ -44,7 +44,8 @@ function Banner() {
       <div className="flex items-end pb-[2%] w-[90%] mx-auto gap-[40px]">
         <img
           src={image1}
-          alt=""
+          alt="aktivity"
+          title="Aktivity"
           className="rounded-3xl w-full aspect-[0.72/1] hover:scale-105 transition-all duration-300 ease-in"
         />
         <div className="aspect-[0.65/1] bg-[#DC2B1B]  w-[70%] rounded-3xl flex flex-col justify-center items-center hover:scale-105 transition-all duration-300 ease-in">
@@ -56,12 +57,22 @@ function Banner() {
         <div className="aspect-[1.25/1] bg-white shadow-[0px_4px_10.2px_rgba(0,0,0,0.25)] w-full rounded-3xl hover:scale-105 transition-all duration-300 ease-in">
           <div className="relative w-full h-full flex flex-col justify-center px-[8%]">
             <div className="w-[clamp(20px,3vw,50px)] p-[5%] bg-[#FFD173] rounded-md mb-[2%]">
-              <img src={totalProject} alt="" className="w-full" />
+              <img
+                src={totalProject}
+                alt="totalProject"
+                title="Aktivity"
+                className="w-full"
+              />
             </div>
             <div className="flex gap-2">
               <h2 className="leading-snug text-[#4F4F4F]">Total Projects</h2>
               <div className="w-[clamp(10px,2vw,35px)] p-[4%] bg-[#FFD173] rounded-full">
-                <img src={upArrow} alt="" className="w-full" />
+                <img
+                  src={upArrow}
+                  alt="arrow"
+                  title="Aktivity"
+                  className="w-full"
+                />
               </div>
               <h2 className="leading-snug text-[#231801]">8%</h2>
             </div>
@@ -81,11 +92,17 @@ function Banner() {
         <div className="aspect-[0.72/1] relative w-full overflow-hidden rounded-3xl hover:scale-105 transition-all duration-300 ease-in">
           <img
             src={image2}
-            alt=""
+            alt="aktivity"
+            title="Aktivity"
             className="absolute -z-10 object-cover w-full h-full"
           />
           <div className="relative w-full h-full flex flex-col justify-end px-8 py-8">
-            <img src={achieve} alt="" className="w-[53px]" />
+            <img
+              src={achieve}
+              alt="achieve"
+              title="Aktivity"
+              className="w-[53px]"
+            />
             <h3 className="text-white leading-snug">
               Achieve Optimal Efficiency and Boost Productivity
             </h3>

@@ -41,7 +41,8 @@ function Footer() {
           <img
             onClick={() => (window.location.href = "/")}
             src={logo}
-            alt=""
+            alt="logo"
+            title="Aktivity"
             className="w-[250px] mb-[2%] cursor-pointer"
           />
           <h2 className="text-[#121212] font-extralight leading-snug">
@@ -79,13 +80,28 @@ function Footer() {
               </a>
               <div className="flex justify-between mt-[10%]">
                 <div className="w-[clamp(10px,2.2vw,50px)] p-[3%] bg-[#F5F5F5] border border-[#F12D0B] rounded-lg mb-[2%]">
-                  <img src={linkedin} alt="" className="w-full" />
+                  <img
+                    src={linkedin}
+                    alt="logo"
+                    title="Linkedin"
+                    className="w-full"
+                  />
                 </div>
                 <div className="w-[clamp(10px,2.2vw,50px)] p-[3%] bg-[#F5F5F5] border border-[#F12D0B] rounded-lg mb-[2%]">
-                  <img src={youtube} alt="" className="w-full" />
+                  <img
+                    src={youtube}
+                    alt="logo"
+                    title="Youtube"
+                    className="w-full"
+                  />
                 </div>
                 <div className="w-[clamp(10px,2.2vw,50px)] p-[3%] bg-[#F5F5F5] border border-[#F12D0B] rounded-lg mb-[2%]">
-                  <img src={facebook} alt="" className="w-full" />
+                  <img
+                    src={facebook}
+                    alt="logo"
+                    title="Facebook"
+                    className="w-full"
+                  />
                 </div>
               </div>
             </div>

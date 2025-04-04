@@ -26,7 +26,8 @@ function Navbar() {
       <img
         onClick={() => (window.location.href = "/")}
         src={logo}
-        alt=""
+        alt="logo"
+        title="Aktivity"
         className="w-[250px] cursor-pointer"
       />
       <div className="w-[60%] flex justify-between items-center">

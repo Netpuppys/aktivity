@@ -16,7 +16,8 @@ function ActivityWorks() {
           Drive ROI
         </button>
       </div>
-      <img src={activity} alt="" className="w-full" />
+      <img src={activity}  alt="aktivity"
+        title="Aktivity" className="w-full" />
       <button className="mt-[1%] bg-black text-white font-medium px-[4%] hover:bg-white hover:text-black transition-all duration-300 ease-linear">
         See It in Action
       </button>

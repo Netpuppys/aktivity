@@ -3,7 +3,12 @@ import challengeImage from "../../../assets/Challenge.png";
 function Challenge() {
   return (
     <div className="flex w-[80%] mx-auto py-[3%] justify-between items-center">
-      <img src={challengeImage} alt="" className="rounded-3xl w-[47%]" />
+      <img
+        src={challengeImage}
+        alt="challenge"
+        title="Challenge Image"
+        className="rounded-3xl w-[47%]"
+      />
       <div className="w-[47%]">
         <h5 className="text-[#4D4D4D] font-light">
           <span className="bg-gradient-to-r font-medium from-[#F6AB12] via-[#F12D0B] to-[#800437] text-transparent bg-clip-text">
