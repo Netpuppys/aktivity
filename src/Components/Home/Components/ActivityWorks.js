@@ -17,7 +17,7 @@ function ActivityWorks() {
         </button>
       </div>
       <img src={activity} alt="" className="w-full" />
-      <button className="mt-[1%] bg-black text-white font-medium px-[4%]">
+      <button className="mt-[1%] bg-black text-white font-medium px-[4%] hover:bg-white hover:text-black transition-all duration-300 ease-linear">
         See It in Action
       </button>
     </div>

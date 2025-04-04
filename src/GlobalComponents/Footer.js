@@ -36,7 +36,7 @@ function Footer() {
   ];
   return (
     <div className="pb-[2%] w-[83%] mx-auto ">
-      <div className="w-full py-[2%] flex justify-center items-center border-b border-[#F12D0B] border-opacity-70">
+      <div className="w-full pt-[6%] pb-[2%] flex justify-center items-center border-b border-[#F12D0B] border-opacity-70">
         <div className="w-fit max-w-[18vw]">
           <img
             onClick={() => (window.location.href = "/")}
@@ -59,7 +59,7 @@ function Footer() {
                 <a
                   href={item.linkTo}
                   key={index}
-                  className="text-[#6B6B6B] font-normal"
+                  className="text-[#6B6B6B] font-normal hover:bg-gradient-to-r hover:from-[#F6AB12] hover:via-[#F12D0B] hover:to-[#800437] hover:text-transparent hover:bg-clip-text transition-all duration-300 ease-linear"
                 >
                   {item.title}
                 </a>
@@ -73,7 +73,7 @@ function Footer() {
             <div className="w-full">
               <a
                 href="mailto:Hallo@aktivity.com"
-                className="text-[#6B6B6B] font-normal"
+                className="text-[#6B6B6B] font-normal hover:bg-gradient-to-r hover:from-[#F6AB12] hover:via-[#F12D0B] hover:to-[#800437] hover:text-transparent hover:bg-clip-text transition-all duration-300 ease-linear"
               >
                 Hallo@aktivity.com
               </a>
@@ -95,8 +95,18 @@ function Footer() {
       <div className="pt-[1%] w-full flex justify-between">
         <h2 className="w-fit">© 2024 Aktivity. All rights reserved</h2>
         <div className="w-fit flex gap-[30px]">
-          <a href="/terms-and-condition">Terms & Conditions</a>
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a
+            href="/terms-and-condition"
+            className="hover:bg-gradient-to-r hover:from-[#F6AB12] hover:via-[#F12D0B] hover:to-[#800437] hover:text-transparent hover:bg-clip-text transition-all duration-300 ease-linear"
+          >
+            Terms & Conditions
+          </a>
+          <a
+            href="/privacy-policy"
+            className="hover:bg-gradient-to-r hover:from-[#F6AB12] hover:via-[#F12D0B] hover:to-[#800437] hover:text-transparent hover:bg-clip-text transition-all duration-300 ease-linear"
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </div>
