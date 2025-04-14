@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import menu from "../assets/icons/menu.png";
 import { useLocation } from "react-router-dom";
 function Navbar() {
   const navbarItem = [
@@ -22,15 +23,15 @@ function Navbar() {
   ];
   const location = useLocation();
   return (
-    <div className="w-[85%] mx-auto py-[3%] flex justify-between items-center">
+    <div className="w-[90%] md:w-[85%] mx-auto py-8 md:py-[3%] flex gap-2 justify-between items-center">
       <img
         onClick={() => (window.location.href = "/")}
         src={logo}
         alt="logo"
         title="Aktivity"
-        className="w-[250px] cursor-pointer"
+        className="w-[65vw] max-w-[250vw] md:w-[18vw] cursor-pointer"
       />
-      <div className="w-[60%] flex justify-between items-center">
+      <div className="w-[60%] hidden md:flex justify-between items-center">
         <div className="w-fit flex gap-[50px]">
           {navbarItem.map((item, index) => (
             <a
@@ -52,6 +53,9 @@ function Navbar() {
         >
           Sign Up
         </button>
+      </div>
+      <div className="w-[60%] flex md:hidden justify-end items-center">
+        <img src={menu} alt="" className="w-fit h-fit" title="" />
       </div>
     </div>
   );

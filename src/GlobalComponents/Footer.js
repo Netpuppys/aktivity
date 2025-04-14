@@ -35,9 +35,9 @@ function Footer() {
     },
   ];
   return (
-    <div className="pb-[2%] w-[83%] mx-auto ">
-      <div className="w-full pt-[6%] pb-[2%] flex justify-center items-center border-b border-[#F12D0B] border-opacity-70">
-        <div className="w-fit max-w-[18vw]">
+    <div className="pb-8 md:pb-[2%] w-[83%] mx-auto ">
+      <div className="w-full pt-4 gap-4 md:gap-0 md:pt-[6%] pb-4 md:pb-[2%] flex flex-col md:flex-row justify-center items-center border-b border-[#F12D0B] border-opacity-70">
+        <div className="w-fit md:max-w-[18vw]">
           <img
             onClick={() => (window.location.href = "/")}
             src={logo}
@@ -50,9 +50,12 @@ function Footer() {
             more information
           </h2>
         </div>
-        <div className="w-[calc(90%-18vw)] ml-auto flex justify-between gap-2">
+        <div className="w-full md:w-[calc(90%-18vw)] md:ml-auto flex flex-wrap md:flex-nowrap justify-between gap-2">
           {links.map((item, index) => (
-            <div key={index} className="w-fit flex flex-col gap-2">
+            <div
+              key={index}
+              className="w-[calc(50%-0.25rem)] md:w-fit flex flex-col gap-2"
+            >
               <h3 className="bg-gradient-to-r mb-1 from-[#F6AB12] via-[#F12D0B] to-[#800437] text-transparent bg-clip-text">
                 {item.title}
               </h3>
@@ -67,7 +70,7 @@ function Footer() {
               ))}
             </div>
           ))}
-          <div className="w-fit flex flex-col gap-2">
+          <div className="w-[calc(50%-0.25rem)] md:w-fit flex flex-col gap-2">
             <h3 className="bg-gradient-to-r from-[#F6AB12] via-[#F12D0B] to-[#800437] text-transparent bg-clip-text">
               Get In Touch
             </h3>
@@ -79,7 +82,7 @@ function Footer() {
                 Hallo@aktivity.com
               </a>
               <div className="flex justify-between mt-[10%]">
-                <div className="w-[clamp(10px,2.2vw,50px)] p-[3%] bg-[#F5F5F5] border border-[#F12D0B] rounded-lg mb-[2%]">
+                <div className="w-[clamp(10px,10vw,50px)] md:w-[clamp(10px,2.2vw,50px)] p-[3%] bg-[#F5F5F5] border border-[#F12D0B] rounded-lg mb-[2%]">
                   <img
                     src={linkedin}
                     alt="logo"
@@ -87,7 +90,7 @@ function Footer() {
                     className="w-full"
                   />
                 </div>
-                <div className="w-[clamp(10px,2.2vw,50px)] p-[3%] bg-[#F5F5F5] border border-[#F12D0B] rounded-lg mb-[2%]">
+                <div className="w-[clamp(10px,10vw,50px)] md:w-[clamp(10px,2.2vw,50px)] p-[3%] bg-[#F5F5F5] border border-[#F12D0B] rounded-lg mb-[2%]">
                   <img
                     src={youtube}
                     alt="logo"
@@ -95,7 +98,7 @@ function Footer() {
                     className="w-full"
                   />
                 </div>
-                <div className="w-[clamp(10px,2.2vw,50px)] p-[3%] bg-[#F5F5F5] border border-[#F12D0B] rounded-lg mb-[2%]">
+                <div className="w-[clamp(10px,10vw,50px)] md:w-[clamp(10px,2.2vw,50px)] p-[3%] bg-[#F5F5F5] border border-[#F12D0B] rounded-lg mb-[2%]">
                   <img
                     src={facebook}
                     alt="logo"
@@ -108,9 +111,11 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="pt-[1%] w-full flex justify-between">
-        <h2 className="w-fit">© 2024 Aktivity. All rights reserved</h2>
-        <div className="w-fit flex gap-[30px]">
+      <div className="pt-2 md:pt-[1%] w-full flex flex-col md:flex-row gap-2 md:gap-0 justify-between">
+        <h2 className="w-full md:w-fit">
+          © 2024 Aktivity. All rights reserved
+        </h2>
+        <div className="w-full md:w-fit flex justify-between md:gap-[30px]">
           <a
             href="/terms-and-condition"
             className="hover:bg-gradient-to-r hover:from-[#F6AB12] hover:via-[#F12D0B] hover:to-[#800437] hover:text-transparent hover:bg-clip-text transition-all duration-300 ease-linear"

@@ -5,7 +5,7 @@ import ActivityWorks from "./Components/ActivityWorks";
 
 function Homepage() {
   return (
-    <div className="pt-[2%]">
+    <div className="pt-8 md:pt-[2%]">
       <Banner />
       <Challenge />
       <ActivityWorks />

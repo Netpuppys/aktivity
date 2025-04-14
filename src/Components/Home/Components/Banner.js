@@ -10,7 +10,7 @@ function Banner() {
   return (
     <div className="w-full flex flex-col justify-center items-center">
       <Bounce triggerOnce>
-        <h5 className="text-center font-semibold">
+        <h5 className="px-8 md:px-0 md:text-center font-semibold">
           Maximize Training ROI with Real Engagement & <br />
           <span className="bg-gradient-to-r from-[#F6AB12] via-[#F12D0B] to-[#800437] text-transparent bg-clip-text">
             Measurable Outcomes
@@ -18,11 +18,11 @@ function Banner() {
         </h5>
       </Bounce>
       <Fade triggerOnce delay={300}>
-        <h1 className="text-center pt-[1%] text-[#707070]">
+        <h1 className="px-8 md:px-0 md:text-center pt-2 md:pt-[1%] text-[#707070]">
           Transform passive learning into interactive, high-impact
         </h1>
       </Fade>
-      <div className="w-fit flex gap-6 pt-[2%] pb-[1%]">
+      <div className="w-full px-8 md:px-0 md:w-fit flex gap-6 pt-4 md:pt-[2%] py-4 md:pb-[1%]">
         <button className="bg-gradient-to-r from-[#F6AB12] via-[#F12D0B] to-[#800437] text-white shadow-[0px_4px_10.1px_rgba(0,0,0,0.25)] hover:bg-white hover:text-transparent hover:bg-clip-text transition-all duration-300 ease-in-out font-medium">
           Get Started
         </button>
@@ -41,22 +41,22 @@ function Banner() {
       <h2 className="text-[#3F3F3F] font-normal">
         from 80+ <span className="underline font-medium">reviews</span>
       </h2>
-      <div className="flex items-end pb-[2%] w-[90%] mx-auto gap-[40px]">
+      <div className="flex flex-col md:flex-row items-center md:items-end pt-8 md:pt-0 pb-[2%] w-[90%] mx-auto gap-[20px] md:gap-[40px]">
         <img
           src={image1}
           alt="aktivity"
           title="Aktivity"
-          className="rounded-3xl w-full aspect-[0.72/1] hover:scale-105 transition-all duration-300 ease-in"
+          className="rounded-3xl w-full object-cover aspect-[2.32/1] md:aspect-[0.72/1] hover:scale-105 transition-all duration-300 ease-in"
         />
-        <div className="aspect-[0.65/1] bg-[#DC2B1B]  w-[70%] rounded-3xl flex flex-col justify-center items-center hover:scale-105 transition-all duration-300 ease-in">
+        <div className="aspect-[2.32/1] md:aspect-[0.65/1] bg-[#DC2B1B] w-full md:w-[70%] rounded-3xl flex flex-col justify-center items-center hover:scale-105 transition-all duration-300 ease-in">
           <h4 className="font-semibold text-center px-8 text-white">100+</h4>
           <h3 className="text-center px-8 text-white leading-snug">
             Our Esteemed Clients and Partners
           </h3>
         </div>
-        <div className="aspect-[1.25/1] bg-white shadow-[0px_4px_10.2px_rgba(0,0,0,0.25)] w-full rounded-3xl hover:scale-105 transition-all duration-300 ease-in">
+        <div className="aspect-[1.7/1] md:aspect-[1.25/1] bg-white shadow-[0px_4px_10.2px_rgba(0,0,0,0.25)] w-full rounded-3xl hover:scale-105 transition-all duration-300 ease-in">
           <div className="relative w-full h-full flex flex-col justify-center px-[8%]">
-            <div className="w-[clamp(20px,3vw,50px)] p-[5%] bg-[#FFD173] rounded-md mb-[2%]">
+            <div className="w-[clamp(20px,30vw,50px)] md:w-[clamp(20px,3vw,50px)] p-[3%] md:p-[5%] bg-[#FFD173] rounded-md mb-[2%]">
               <img
                 src={totalProject}
                 alt="totalProject"
@@ -66,7 +66,7 @@ function Banner() {
             </div>
             <div className="flex gap-2">
               <h2 className="leading-snug text-[#4F4F4F]">Total Projects</h2>
-              <div className="w-[clamp(10px,2vw,35px)] p-[4%] bg-[#FFD173] rounded-full">
+              <div className="w-[clamp(20px,8vw,50px)] md:w-[clamp(10px,2vw,35px)] p-[3%] md:p-[4%] bg-[#FFD173] rounded-full">
                 <img
                   src={upArrow}
                   alt="arrow"
@@ -82,21 +82,21 @@ function Banner() {
             </h2>
           </div>
         </div>
-        <div className="aspect-[0.65/1] bg-[#F78F18] w-[70%] rounded-3xl flex flex-col justify-center items-center hover:scale-105 transition-all duration-300 ease-in">
+        <div className="aspect-[2.32/1] md:aspect-[0.65/1] bg-[#F78F18] w-full md:w-[70%] rounded-3xl flex flex-col justify-center items-center hover:scale-105 transition-all duration-300 ease-in">
           <h4 className="font-semibold text-center px-8 text-white">6+</h4>
           <h3 className="text-center px-8 text-white leading-snug">
             Years of Dedicated Service
           </h3>
         </div>
 
-        <div className="aspect-[0.72/1] relative w-full overflow-hidden rounded-3xl hover:scale-105 transition-all duration-300 ease-in">
+        <div className="aspect-[2/1] md:aspect-[0.72/1] relative w-full overflow-hidden rounded-3xl hover:scale-105 transition-all duration-300 ease-in">
           <img
             src={image2}
             alt="aktivity"
             title="Aktivity"
             className="absolute -z-10 object-cover w-full h-full"
           />
-          <div className="relative w-full h-full flex flex-col justify-end px-8 py-8">
+          <div className="relative w-full h-full flex flex-col justify-end px-4 md:px-8 py-4 md:py-8">
             <img
               src={achieve}
               alt="achieve"
